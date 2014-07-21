@@ -1,0 +1,83 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Futura;
+  min-height: 2000px; }
+
+#nav1 {
+  width: 100%;
+  min-width: 700px;
+  height: 100px;
+  background-color: #2DDDE3; }
+  #nav1 h1 {
+    float: left;
+    margin-left: 80px;
+    margin-top: 30px;
+    font-family: Futura;
+    letter-spacing: 2px;
+    word-spacing: 1px; }
+  #nav1 h1:hover, #nav1 li:hover {
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer; }
+  #nav1 ul {
+    width: 480px;
+    float: right;
+    margin-right: 40px; }
+  #nav1 li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 30px 20px 30px;
+    font-family: Futura; }
+  #nav1 #homedrop {
+    display: none;
+    width: 100px;
+    height: 200px;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 2;
+    background-color: #2DDDE3; }
+    #nav1 #homedrop h5:hover {
+      cursor: pointer;
+      color: white; }
+
+#nav2 {
+  width: 1440px;
+  height: 400px;
+  margin-top: 200px;
+  background-color: #87318c;
+  position: absolute; }
+  #nav2 h1 {
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 150px;
+    font-size: 65px;
+    letter-spacing: 2px;
+    color: white; }
+  #nav2 h1:hover {
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer; }
+  #nav2 #appname {
+    width: 270px;
+    position: absolute;
+    margin-left: 600px; }
+  #nav2 #login {
+    display: none;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    margin-left: 620px;
+    z-index: 2;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6); }
+    #nav2 #login form {
+      padding: 20px;
+      height: 95px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px; }
+      #nav2 #login form #subbutt {
+        width: 60px;
+        margin-left: 45px; }
+      #nav2 #login form p {
+        font-size: 15px;
+        line-height: 1px; }

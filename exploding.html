@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>exploding</title>
+	<link rel="stylesheet" href="styles/exploding.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// ### EXPLODING CIRCLE NAV/SIGN IN ###
+			$("#nav3explode").click(function(){
+				$("#welcome").delay(700).animate({width: '365px', opacity: '1'}, 1300);
+
+				$(this).hide('explode',{pieces: 24 }, 400);
+
+				$("#ballground").delay(800).animate({height:'show', top:'-=201px'}, 1000);
+
+				$("#ball1").delay(2300).animate({height:'show', top:'+=400px',opacity: '1'}, 1000, 'easeOutBounce');
+				$("#ball2").delay(2800).animate({height:'show', top:'+=400px',opacity: '1'}, 1000, 'easeOutBounce');
+				$("#ball3").delay(3300).animate({height:'show', top:'+=400px',opacity: '1'}, 1000, 'easeOutBounce');
+				$("#ball4").delay(3800).animate({height:'show', top:'+=400px',opacity: '1'}, 1000, 'easeOutBounce');
+			});
+
+		
+			// ### EXPLODING CIRCLE NAV/SIGN IN ###
+		});
+	</script>
+
+</head>
+<body>
+	<h1 id="welcome">Welcome To My App</h1>
+	<header>
+		<div id="ball1" class="ballfall">home</div>
+		<div id="ball2" class="ballfall">about</div>
+		<div id="ball3" class="ballfall">contact</div>
+		<div id="ball4" class="ballfall">???</div>
+		<div id="ballground"></div>
+		<nav id="nav3">
+			<div id="nav3explode">App</div>
+		</nav>	
+	</header>
+</body>
+</html>

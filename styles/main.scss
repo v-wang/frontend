@@ -1,0 +1,142 @@
+// #### SCSS STYLES ####
+// #### USING SASS ####
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: Futura;
+	min-height: 2000px;
+}
+
+
+
+// ################    NAV 1 ################   
+#nav1 {
+	width: 100%;
+	min-width: 700px;
+	height: 100px;
+	// border: 1px solid black;
+	background-color: #2DDDE3;
+		h1 {
+			float: left;
+			margin-left: 80px;
+			margin-top: 30px;
+			font-family: Futura;
+			letter-spacing: 2px;
+			word-spacing: 1px;
+		}
+		h1:hover, li:hover {
+			color: rgba(255,255,255,0.8);
+			cursor: pointer;
+		}
+			ul {
+				width: 480px;
+				// border:1px solid red;
+				float: right;
+				margin-right: 40px;
+			}
+				li {
+					list-style: none;
+					display: inline-block;
+					padding: 20px 30px 20px 30px;
+					font-family: Futura;
+				}
+				// #### DROP DOWN IN NAV BAR ####
+					#homedrop{
+						display: none;
+						width: 100px;
+						height: 200px;
+						border-radius: 30px;
+						// border:1px solid black;
+						position: absolute;
+						z-index: 2;
+						background-color: #2DDDE3;
+						// background-color: rgba(0,0,0,0.1);
+							h5 {
+								
+							}
+
+							h5:hover {
+								cursor: pointer;
+								color: white;
+							}
+					}
+}
+// ################  END  NAV 1 ################  
+
+
+
+// ################    NAV 2 ################  
+#nav2 {
+	width:1440px;
+	height: 400px;
+	margin-top: 200px;
+	// border: 1px solid black;
+	background-color: #87318c;
+	position: absolute;
+		h1 {
+			width: 270px;
+			margin: 0 auto;
+			// border: 1px solid black;
+			margin-top: 150px;
+			font-size: 65px;
+			letter-spacing: 2px;
+			color: white;
+		}
+		h1:hover {
+			color:rgba(255,255,255,0.8);
+			cursor: pointer;
+		}
+		#appname {
+			width: 270px;
+			// border:1px solid black;
+			position:absolute;
+			margin-left:600px;
+		}
+
+		#login {
+			display: none;
+			width: 200px;
+			height: 250px;
+			// border: 1px solid black;
+			position: absolute;
+			margin-left: 620px;
+			z-index: 2;
+			border-radius:20px;
+			background-color:rgba(255,255,255,0.6);
+				form {
+					padding: 20px;
+					height: 95px;
+					background-color:rgba(0,0,0,0.6);
+					border-top-left-radius: 20px;
+					border-top-right-radius: 20px;
+						#subbutt {
+							width: 60px;
+							margin-left: 45px;
+						}
+						p {
+							font-size: 15px;
+							line-height: 1px;
+						}
+				}
+		}
+}
+// ################  END  NAV 2 ################ 
+
+
+
+
+
+// ################    NAV 3 ################  
+
+
+
+
+
+// ################  END  NAV 3 ################ 
+
+
+
+
+
+
+

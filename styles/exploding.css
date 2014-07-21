@@ -1,0 +1,69 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Futura;
+  min-width: 900px; }
+
+#nav3 {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  margin-top: -50px; }
+
+#nav3explode {
+  width: 400px;
+  height: 250px;
+  border-radius: 250px;
+  border: 1px solid white;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  position: absolute;
+  background-color: black;
+  padding-top: 150px;
+  font-size: 55px;
+  top: 8%;
+  left: 36%;
+  letter-spacing: 3px; }
+
+#nav3explode:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.ballfall {
+  width: 120px;
+  height: 80px;
+  padding-top: 40px;
+  border-radius: 80px;
+  background-color: black;
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  left: 10%;
+  margin-left: 130px;
+  color: white;
+  text-align: center; }
+
+.ballfall:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+#ballground {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  position: relative;
+  top: 600px;
+  display: none; }
+
+#welcome {
+  width: 0;
+  height: 48px;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  overflow: hidden;
+  opacity: 0;
+  margin: 0 auto;
+  position: relative;
+  top: 120px; }

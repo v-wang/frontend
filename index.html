@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Front End Toolkit</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			
+			// #### NAV 1 SCRIPTS ####
+
+			$(".navbuttshow").click(function(){
+				$("#homedrop").animate({height: 'show'}, 1000, 'easeOutBounce');
+			});
+			$("#homedrop").mouseleave(function(){
+				$("#homedrop").animate({height: 'hide'}, 1000, 'easeOutBounce');
+			});
+
+			// #### END NAV 1 SCRIPTS ####
+
+
+
+			// #### FLASHING NAV - MOUSEMOVEMENT ####
+
+			// function flash() {
+			// 	var appflash = document.getElementById('appname');
+			// 	appflash.style.color = (appflash.style.color == 'white') ? 'black' : 'white';
+			// }
+			// $(document).mousemove(flash);
+			// var flash = setInterval(flash,2000, 'ease');
+
+			// END #### FLASHING NAV - MOUSEMOVEMENT ####
+
+			// #### THIS CHANGES THE COLOR AND POSITION OF THE APPNAME ####
+
+			$("#appname").click(function() {
+				$("#appname").animate({left: "-=450", color: "rgba(255,255,255,0.6)"},'slow');
+				$("#login").animate({height: "show", bottom: "+=70px"},'slow');
+			});
+
+			// #### END THIS CHANGES THE COLOR AND POSITION OF THE APPNAME ####
+			
+			$("#appnamenav3").click(function(){
+				$(this).hide("explode",{pieces: 12},2000);
+			});
+
+
+		});
+	</script>
+</head>
+<body>
+	<!-- FIRST NAV -->
+	<header>
+		<nav id="nav1">
+		<h1>Nav 1</h1>
+			<ul>
+				<li class="navbuttshow" class="navbutthide">Home</li>
+				<div id="homedrop">
+					<h5 align='center'>opt 1</h5>
+					<h5 align='center'>opt 2</h5>
+					<h5 align='center'>opt 3</h5>
+					<h5 align='center'>opt 4</h5>
+					<h5 align='center'>opt 5</h5>
+				</div>
+				<li>About us</li>
+				
+				<li>Contact</li>
+				
+				<li>Log out</li>
+				
+			</ul>
+		</nav>
+		<!-- END FIRST NAV -->
+		<!-- SECOND NAV - HYBRID SIGN UP/IN -->
+		<nav id="nav2">
+			<h1 id="appname">My App</h1>
+			<div id="login">
+				<form action="">
+					<input type="text" name="Email" placeholder="Email">
+					<br>
+					<br>
+					<input type="password" name="Password" placeholder="Password">
+					<br>
+					<br>
+					<input id="subbutt" type="submit" value="sign in">
+					<br>
+					<br>
+					<br>
+					<p align="center">Are you a new user?</p>
+					<p><input id="subbutt" type="submit" value="sign up"></p>
+				</form>
+			</div>
+		</nav>
+		<!-- END SECOND NAV - HYBRID SIGN UP/IN -->
+	</header>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+

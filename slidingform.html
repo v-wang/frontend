@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>slidingform</title>
+	<link rel="stylesheet" href="styles/sliding.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#arrow1").click(function(){
+				$("#arrow1").fadeOut(200);
+				$("#col1").animate({opacity:'0'});
+			});
+			$("#arrow2").click(function(){
+				$("#col2").animate({opacity:'0'});
+			});
+			$("#arrow3").click(function(){
+				$("#col3").animate({opacity:'0'});
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div id="col1" class="columns" align="center">1.</div>
+		<div id="col2" class="columns" align="center">2.</div>
+		<div id="col3" class="columns" align="center">3.</div>
+		<div id="col4" class="columns" align="center">4.</div>
+		<div id="arrowholder">
+			<div id="arrow1" class="arrows"><img src="images/circle10.svg" alt=""></div>
+			<div id="arrow2" class="arrows"><img src="images/circle10.svg" alt=""></div>
+			<div id="arrow3" class="arrows"><img src="images/circle10.svg" alt=""></div>
+		</div>
+	</div>	
+</body>
+</html>

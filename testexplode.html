@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>exploding</title>
+	<link rel="stylesheet" href="styles/test.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// ### EXPLODING CIRCLE NAV/SIGN IN ###
+			// $("#nav3explode").click(function(){
+			// 	$(this).hide('explode',{pieces: 24 }, 1000);
+			// 	// $(this).show({opacity: 0});
+			// 	$("#ball1").animate({height:'show', top:'+=400px'}, 1000, 'easeOutBounce',function(){
+			// 		$("#ball1").toggleClass("ballfell");
+			// 	});
+
+			// ### EXPLODING CIRCLE NAV/SIGN IN ###
+			$(document).click(function(){
+				$("#ball1").animate({height: "show", top: "+=400px"}, 1000, 'easeOutBounce');
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<header>
+			<div id="ball1" class="ballfall"></div>
+			<div id="ball2" class="ballfall"></div>
+			<div id="ball3" class="ballfall"></div>
+			<div id="ball4" class="ballfall"></div>
+		<nav id="nav3">
+			
+		</nav>	
+	</header>
+</body>
+</html>
